@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Home Automation</title>
+</head>
+<body class="container-fluid">
+    <hr>
+    <table border="3" >
+        <tbody>
+            <tr>
+                <td>
+                    <div  class="container-fluid" style="margin-left: 2%;margin-top: 2rem;size: si;">
+                        <hr>
+                        <h2 style="color: rgb(209, 94, 0);" >Remote</h2>
+                        <hr>
+                        <div class="container-fluid">
+                            <form class="btn" action="/fan">
+                                <button type="input" class="btn btn-secondary" style="width: 5rem;height: 5rem;" onclick="fan()">fan</button>
+                            </form>
+                            <form class="btn" action="/led">
+                                <button type="input" class="btn btn-secondary" style="width: 5rem;height: 5rem;">led</button>
+                            </form>
+                        </div>
+                        <div class="container-fluid">
+                            <form class="btn" action="/led2">
+                                <button type="input" class="btn btn-secondary" style="width: 5rem;height: 5rem;">ledout</button>
+                            </form>
+                            <form class="btn" action="/">
+                                <button type="input" class="btn btn-outline-secondary" style="width: 5rem;height: 5rem;">Reload</button>
+                            </form>
+                        </div>
+                        <hr>
+                        <hr>
+                        <DIv>
+                            <h6>Response</h6>
+                            <hr>
+                            <p>Fan {{f}}</p>
+                            <p>Led {{l}}</p>
+                            <p>Led_out {{ll}}</p>
+                        </DIv>
+                        <hr>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <footer class="container-fluid">
+        <h3>Note:</h3>
+        <p>Use reload button before use for best result</p>
+    </footer>
+</body>
+</html>
